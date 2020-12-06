@@ -51,7 +51,7 @@ docker create^
   --name %CONTAINERNAME% -t ^
   --mount source=database,target=/var/lib/mysql ^
   -v "%CONFIGSTORAGE%":/config:rw ^
-  -v "%VIDEOSTORAGE%":/opt/shinobi/videos:rw ^
+  -v "%VIDEOSTORAGE%":/home/Shinobi/videos:rw ^
   -v /dev/shm/shinobiDockerTemp:/dev/shm/streams:rw ^
   -p %LOCALPORT%:8080 ^
   %IMAGENAME% 

@@ -42,7 +42,7 @@ echo I am trying to build the container $CONTAINERNAME from image $IMAGENAME
   -v /etc/localtime:/etc/localtime:ro \
   -v /etc/timezone:/etc/timezone:ro \
   -v $CONFIGSTORAGE:/config \
-  -v $VIDEOSTORAGE:/opt/shinobi/videos \
+  -v $VIDEOSTORAGE:/home/Shinobi/videos \
   -v $DBSTORAGE:/var/lib/mysql \
   -v /dev/shm/shinobiDockerTemp:/dev/shm/streams \
   -p $LOCALPORT:8080 \
